@@ -15,6 +15,7 @@ export const Root = styled.div`
 
 export const Title = styled.h1`
   font-family: "Roboto", "sans-serif";
+  font
 `;
 
 export const Content = styled.div`
