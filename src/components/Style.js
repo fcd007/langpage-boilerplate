@@ -1,9 +1,17 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 <style>
   @import
   url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 </style>;
+
+export const Root = styled.div`
+  ${(props) => css`
+    background: url(${props.image}), rgba(0, 0, 0, 0.4);
+    background-size: cover;
+    background-position: center;
+  `}
+`;
 
 export const Title = styled.h1`
   font-family: "Roboto", "sans-serif";

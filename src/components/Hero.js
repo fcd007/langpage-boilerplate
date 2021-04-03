@@ -1,14 +1,13 @@
 import React from "react";
-import { Title, Content } from "./Style";
+import { Root, Title, Content } from "./Style";
 
-const Hero = ({ title, children }) => (
-  <div>
+const Hero = ({ image, title, children }) => (
+  <Root image={image}>
     <div>
       <Title>{title}</Title>
       <Content>{children}</Content>
     </div>
-    <button type="submit">Matricule-se Já</button>
-  </div>
+  </Root>
 );
 
 export default Hero;
