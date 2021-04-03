@@ -1,10 +1,11 @@
 import React from "react";
+import { Title, Content } from "./Style";
 
 const Hero = ({ title, children }) => (
   <div>
     <div>
-      <h1>{title}</h1>
-      {children}
+      <Title>{title}</Title>
+      <Content>{children}</Content>
     </div>
     <button type="submit">Matricule-se Já</button>
   </div>

@@ -1,5 +1,5 @@
 import React from "react";
-
+//adicionando os estilos para poder gerenciar os styles
 import Hero from "../components/Hero.js";
 
 export default {
