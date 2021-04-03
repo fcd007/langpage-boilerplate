@@ -14,12 +14,12 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
-  *, *::before, *::after {
-    box-sizing: inherit;
-  }
-
   body {
     margin: 0;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
   }
 `;
 

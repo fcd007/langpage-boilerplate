@@ -1,12 +1,12 @@
 import React from "react";
-import { Root, Title, Content } from "./Style";
+import { Root, Title, Content, Container } from "./Style";
 
 const Hero = ({ image, title, children }) => (
   <Root image={image}>
-    <div>
+    <Container>
       <Title>{title}</Title>
       <Content>{children}</Content>
-    </div>
+    </Container>
   </Root>
 );
 

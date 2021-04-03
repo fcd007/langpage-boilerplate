@@ -2,6 +2,7 @@ import styled, { css } from "styled-components";
 
 export const Root = styled.div`
   color: #fff;
+  padding: 100px 0;
 
   ${(props) => css`
     background: url(${props.image}), rgba(0, 0, 0, 0.4);
@@ -16,6 +17,21 @@ export const Title = styled.h1`
   letter-spacing: 2px;
 `;
 
+export const Container = styled.div`
+  background-color: red;
+  width: 100%;
+  padding: 0 8px;
+
+  @media (min-width: 768px) {
+    padding: 0 16px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 1140px;
+    margin: 0 auto;
+  }
+`;
+
 export const Content = styled.div`
   p,
   li {
@@ -25,10 +41,12 @@ export const Content = styled.div`
 
   ul {
     list-style: none;
-    padding: 0;
+    padding-left: 0;
   }
 
-  li::before {
-    content: "\\2713\\0020";
+  li {
+    &::before {
+      content: "\\2713\\0020";
+    }
   }
 `;
