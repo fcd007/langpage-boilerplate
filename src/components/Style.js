@@ -1,16 +1,13 @@
 import styled, { css } from "styled-components";
+import { BreadkpointsSize, breakAt } from "./Breadkpoints";
 
-export const BreadkpointsSize = {
-  sm: 576,
-  md: 768,
-  lg: 992,
-  xl: 1200,
+const colors = {
+  yellow: "#ffc107",
+  light: "#fff",
 };
 
-export const breakAt = (size) => `@media (min-width: ${size}px)`;
-
 export const Root = styled.div`
-  color: #fff;
+  color: ${colors.light};
   padding: 100px 0;
 
   ${(props) => css`
@@ -19,11 +16,6 @@ export const Root = styled.div`
     background-position: center;
     background-blend-mode: overlay;
   `}
-`;
-
-export const Title = styled.h1`
-  font-weight: 700;
-  letter-spacing: 2px;
 `;
 
 export const Container = styled.div`
@@ -56,6 +48,7 @@ export const Content = styled.div`
   li {
     &::before {
       content: "\\2713\\0020";
+      color: ${colors.yellow};
     }
   }
 `;

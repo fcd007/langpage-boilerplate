@@ -1,10 +1,13 @@
 import { createGlobalStyle } from "styled-components";
-<style>
-  @import
-  url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
-</style>;
+import { BreadkpointsSize, breakAt } from "./Breadkpoints";
+
+const colors = {
+  yellow: "#ffc107",
+  light: "#fff",
+};
 
 const GlobalStyle = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
   
   html {
     font-family: "Roboto", sans-serif;
@@ -20,6 +23,61 @@ const GlobalStyle = createGlobalStyle`
   
   *, *::before, *::after {
     box-sizing: inherit;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.3;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    strong {
+    color: ${colors.yellow};
+  }
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    ${breakAt(BreadkpointsSize.lg)}{
+      font-size: 3.75rem;
+    }
+  }
+
+  h2 {
+    font-size: 2rem;
+    ${breakAt(BreadkpointsSize.lg)}{
+      font-size: 3.125rem;
+    }
+  }
+
+  h3 {
+    font-size: 1.9rem;
+    ${breakAt(BreadkpointsSize.lg)}{
+      font-size: 2.5rem;
+    }
+  }
+
+  h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    ${breakAt(BreadkpointsSize.lg)}{
+      font-size: 2.125rem;
+    }
+  }
+
+  h5 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    ${breakAt(BreadkpointsSize.lg)}{
+      font-size: 1.5rem;
+    }
+  }
+
+  h6 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    ${breakAt(BreadkpointsSize.lg)}{
+      font-size: 1.125rem;
+    }
   }
 `;
 
