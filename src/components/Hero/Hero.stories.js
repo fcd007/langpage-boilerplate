@@ -1,9 +1,9 @@
 import React from "react";
 //adicionando os estilos para poder gerenciar os styles
-import Hero from "../components/Hero";
-import headerCovidImage from "../assets/images/covid-isolation.jpg";
-import headerWomanImage from "../assets/images/mask-woman.jpg";
-import Heading from "../components/Heading/Heading";
+import Hero from "./Hero";
+import headerCovidImage from "../../stories/assets//images/covid-isolation.jpg";
+import headerWomanImage from "../../stories/assets/images/mask-woman.jpg";
+import Heading from "../Heading/Heading";
 
 export default {
   title: "Hero",
