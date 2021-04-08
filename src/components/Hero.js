@@ -1,12 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { Root, Title, Content, Container } from "./Style";
+import { Root, Content, Container } from "./Style";
 
-const Hero = ({ image, title, children }) => (
+const Hero = ({ image, children }) => (
   <Root image={image}>
     <Container>
-      <Title>{title}</Title>
       <Content>{children}</Content>
     </Container>
   </Root>
@@ -14,7 +13,6 @@ const Hero = ({ image, title, children }) => (
 
 Hero.propTypes = {
   image: PropTypes.string,
-  title: PropTypes.string.isRequired,
   children: PropTypes.node,
 };
 
