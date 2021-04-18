@@ -1,4 +1,6 @@
 import React from "react";
+import { text } from "@storybook/addon-knobs";
+
 //adicionando os estilos para poder gerenciar os styles
 import Hero from "./Hero";
 import headerCovidImage from "../../stories/assets//images/covid-isolation.jpg";
@@ -12,8 +14,13 @@ export default {
 
 export const usage = () => (
   <Hero image={headerCovidImage}>
-    <h1>Plataforma de Gestão de UBS e Áreas Hospitalares</h1>
-    <p>O Smartye provê gestão em tempo real no ambiente de UBSs e Hospitais</p>
+    <h1>{text("Title", "Plataforma de Gestão de UBS e Áreas Hospitalares")}</h1>
+    <p>
+      {text(
+        "Descrition",
+        "O Smartye provê gestão em tempo real no ambiente de UBSs e Hospitais"
+      )}
+    </p>
   </Hero>
 );
 
