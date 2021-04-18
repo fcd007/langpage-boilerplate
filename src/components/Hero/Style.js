@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { BreadkpointsSize, breakAt } from "../Breadkpoints";
+import { BreadkpointsSize, breakAt } from "styles/Breadkpoints";
 
 const colors = {
   yellow: "#ffc107",
