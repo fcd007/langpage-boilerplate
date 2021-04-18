@@ -6,7 +6,7 @@ import headerWomanImage from "../../stories/assets/images/mask-woman.jpg";
 import Heading from "../Heading/Heading";
 
 export default {
-  title: "Hero",
+  title: "Components/Hero",
   component: Hero,
 };
 
