@@ -35,10 +35,7 @@
     "jest": {
       "collectCoverageFrom": [
         "src/**/*.js",
-        "!src/**/*.test.js",
-        "!src/**/test.js",
-        "!src/**/*.stories.js",
-        "!src/**/stories.js"
+        "!src/**/*.stories.js"
       ]
     },
     "overrides": [
