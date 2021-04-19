@@ -3,8 +3,8 @@ import { text } from "@storybook/addon-knobs";
 
 //adicionando os estilos para poder gerenciar os styles
 import Hero from "./Hero";
-import headerCovidImage from "../../stories/assets//images/covid-isolation.jpg";
-import headerWomanImage from "../../stories/assets/images/mask-woman.jpg";
+import headerCovidImage from "stories/assets/images/covid-isolation.jpg";
+import headerWomanImage from "stories/assets/images/mask-woman.jpg";
 import Heading from "../Heading/Heading";
 
 export default {

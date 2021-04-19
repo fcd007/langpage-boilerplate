@@ -32,12 +32,6 @@
       "react-app",
       "react-app/jest"
     ],
-    "jest": {
-      "collectCoverageFrom": [
-        "src/**/*.js",
-        "!src/**/*.stories.js"
-      ]
-    },
     "overrides": [
       {
         "files": [
@@ -47,6 +41,12 @@
           "import/no-anonymous-default-export": "off"
         }
       }
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/**/*.stories.js"
     ]
   },
   "browserslist": {
