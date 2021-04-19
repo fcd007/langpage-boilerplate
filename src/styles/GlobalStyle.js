@@ -1,4 +1,7 @@
+import react from "react";
 import { createGlobalStyle } from "styled-components";
+import { Helmet } from "react-helmet";
+
 import { BreadkpointsSize, breakAt } from "./Breadkpoints";
 
 const colors = {
@@ -80,4 +83,16 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-export default GlobalStyle;
+const GlobalStyleComposed = () => (
+  <>
+    <GlobalStyle />
+    <Helmet>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet"
+      />
+    </Helmet>
+  </>
+);
+
+export default GlobalStyleComposed;
