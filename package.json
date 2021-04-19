@@ -9,6 +9,7 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "dotenv": "^8.2.0",
+    "jest-styled-components": "^7.0.4",
     "prettier": "2.2.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
@@ -30,6 +31,15 @@
       "react-app",
       "react-app/jest"
     ],
+    "jest": {
+      "collectCoverageFrom": [
+        "src/**/*.js",
+        "!**/*.test.js",
+        "!**/test.js",
+        "!**/*.stories.js",
+        "!**/stories.js"
+      ]
+    },
     "overrides": [
       {
         "files": [
