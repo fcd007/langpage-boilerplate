@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { Root, Content, Container } from "./Style";
 
 const Hero = ({ image, children }) => (
-  <Root image={image}>
+  <Root image={image} data-testid="hero">
     <Container>
       <Content>{children}</Content>
     </Container>
