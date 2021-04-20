@@ -27,14 +27,14 @@
     "lint": "eslint src/**/*.js src/**/*.jsx",
     "lint:fix": "eslint --ext .jsx, .js --fix src",
     "test": "react-scripts test",
-    "test:watch": "npm test -- --watch",
-    "test:staged": "npm test -- --findRelatedTests",
+    "test:watch": "yarn test -- --watch",
+    "test:staged": "yarn test --findRelatedTests",
     "test:ci": "test -- --coverage",
-    "test:coverage": "npm test && && coveralls < coverage/lcov.info",
+    "test:coverage": "yarn test && && coveralls < coverage/lcov.info",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
-    "update-libs": "npm-check -u -s"
+    "check": "npm-check -u -s"
   },
   "lint-staged": {
     "**/*.+(js|jsx)": [
@@ -90,6 +90,7 @@
     "eslint-config-airbnb": "^18.2.1",
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-app": "^6.2.2",
-    "husky": "^6.0.0"
+    "husky": "^6.0.0",
+    "npm-check": "^5.9.2"
   }
 }
