@@ -2,12 +2,14 @@ import styled, { css } from "styled-components";
 import { BreadkpointsSize, breakAt } from "styles/Breadkpoints";
 import { theme } from "styles/ThemeProvider";
 
+const { colors } = theme;
+
 export const Root = styled.div`
-  color: ${theme.colorLight};
+  color: ${colors.text.light};
   padding: 100px 0;
 
   ${(props) => css`
-    background: url(${props.image}), rgba(0, 0, 0, 0.4);
+    background: url(${props.image}), rgba(25, 60, 90, 0.7);
     background-size: cover;
     background-position: center;
     background-blend-mode: overlay;
@@ -44,7 +46,7 @@ export const Content = styled.div`
   li {
     &::before {
       content: "\\2713\\0020";
-      color: ${theme.colorYellow};
+      color: ${colors.primary.light};
     }
   }
 `;

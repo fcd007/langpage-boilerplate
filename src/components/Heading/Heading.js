@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { theme } from "styles/ThemeProvider";
 
+const { colors } = theme;
+
 const Heading = styled.div`
   h1,
   h2,
@@ -18,7 +20,7 @@ const Heading = styled.div`
       position: absolute;
       left: 0;
       bottom: -3px;
-      background-color: ${theme.colorYellow};
+      background-color: ${colors.primary.light};
       height: 5px;
       width: 70px;
     }
