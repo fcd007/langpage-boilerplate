@@ -41,12 +41,6 @@
       "jest --findRelatedTests"
     ]
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "npm test"
-    }
-  },
   "eslintConfig": {
     "extends": [
       "react-app",
