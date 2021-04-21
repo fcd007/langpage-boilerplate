@@ -52,12 +52,12 @@ export const ButtonRoot = styled.button`
 
 export const ButtonOutlined = styled(ButtonRoot)`
   background-color: transparent;
-  color: ${theme.colors.primary.main};
+  color: ${getColorButton};
 
   &:hover:enabled {
     background-color: transparent;
-    background-color: ${getColorDark};
-    color: ${theme.colors.text.light};
+    color: ${getColorDark};
+    border: 2px solid ${getColorDark};
   }
 `;
 
