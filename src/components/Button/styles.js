@@ -14,7 +14,18 @@ const getColorButton = ({ color }) => {
     case ButtonColors.error:
       return theme.colors.error.main;
     default:
-      return "#BDBDBD";
+      return theme.colors.text.secundary;
+  }
+};
+
+const getColorDark = ({ color }) => {
+  switch (color) {
+    case ButtonColors.primary:
+      return theme.colors.primary.dark;
+    case ButtonColors.error:
+      return theme.colors.error.dark;
+    default:
+      return theme.colors.text.primary;
   }
 };
 
@@ -26,7 +37,17 @@ export const ButtonRoot = styled.button`
   cursor: pointer;
   background-color: ${getColorButton};
   border: 2px solid ${getColorButton};
+  border-radius: 4px;
   color: ${theme.colors.text.light};
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+  &:hover:enabled {
+    background-color: ${getColorDark};
+  }
 `;
 
 export const Toolbar = styled.div`
