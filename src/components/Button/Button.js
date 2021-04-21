@@ -2,6 +2,12 @@ import React from "react";
 import propTypes from "prop-types";
 import { ButtonRoot } from "./styles";
 
+const ButtonColors = {
+  default: "default",
+  primary: "primary",
+  error: "error",
+};
+
 const Button = ({ type, children, color }) => (
   <ButtonRoot type={type} color={color}>
     {children}

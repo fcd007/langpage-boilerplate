@@ -1,9 +1,7 @@
 import styled from "styled-components";
 import { theme } from "styles/ThemeProvider";
 
-const { colors } = theme;
-
-export const ButtonColors = {
+const ButtonColors = {
   default: "default",
   primary: "primary",
   error: "error",
@@ -28,7 +26,7 @@ export const ButtonRoot = styled.button`
   cursor: pointer;
   background-color: ${getColorButton};
   border: 2px solid ${getColorButton};
-  color: ${colors.text.light};
+  color: ${theme.colors.text.light};
 `;
 
 export const Toolbar = styled.div`
