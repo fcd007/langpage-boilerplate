@@ -50,6 +50,17 @@ export const ButtonRoot = styled.button`
   }
 `;
 
+export const ButtonOutlined = styled(ButtonRoot)`
+  background-color: transparent;
+  color: ${theme.colors.primary.main};
+
+  &:hover:enabled {
+    background-color: transparent;
+    background-color: ${getColorDark};
+    color: ${theme.colors.text.light};
+  }
+`;
+
 export const Toolbar = styled.div`
   & > * {
     margin-right: 8px;
