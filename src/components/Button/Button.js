@@ -8,8 +8,8 @@ const ButtonColors = {
   error: "error",
 };
 
-const Button = ({ type, children, color }) => (
-  <ButtonRoot type={type} color={color}>
+const Button = ({ type, children, color, disabled, onClick }) => (
+  <ButtonRoot disabled={disabled} type={type} color={color} onClick={onClick}>
     {children}
   </ButtonRoot>
 );
