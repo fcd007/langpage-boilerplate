@@ -1,6 +1,6 @@
 import React from "react";
 import propTypes from "prop-types";
-import { ButtonRoot, ButtonOutlined } from "./styles";
+import { ButtonRoot, ButtonOutlined, ButtonLink } from "./styles";
 
 const ButtonColors = {
   default: "default",
@@ -14,22 +14,24 @@ const ButtonsVariants = {
   link: "link",
 };
 
-const Button = ({ type, children, color, disabled, onClick, outlined }) => (
+const Button = ({ type, children, color, disabled, onClick, variant }) => (
   <ButtonRoot
     disabled={disabled}
     type={type}
     color={color}
     onClick={onClick}
-    outlined={outlined}
+    variant={variant}
   >
     {children}
   </ButtonRoot>
 );
 
 const ButtonWrapper = (props) => {
-  switch (props.outlined) {
+  switch (props.variant) {
     case ButtonsVariants.outlined:
       return <ButtonOutlined {...props} />;
+    case ButtonsVariants.link:
+      return <ButtonLink {...props} />;
     default:
       return <Button {...props} />;
   }

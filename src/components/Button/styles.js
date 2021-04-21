@@ -47,6 +47,7 @@ export const ButtonRoot = styled.button`
 
   &:hover:enabled {
     background-color: ${getColorDark};
+    border: 2px solid ${getColorDark};
   }
 `;
 
@@ -58,6 +59,20 @@ export const ButtonOutlined = styled(ButtonRoot)`
     background-color: transparent;
     color: ${getColorDark};
     border: 2px solid ${getColorDark};
+  }
+`;
+
+export const ButtonLink = styled(ButtonRoot)`
+  background-color: transparent;
+  border-color: transparent;
+  color: ${getColorButton};
+  padding-left: 0;
+  padding-right: 0;
+
+  &:hover:enabled {
+    background-color: transparent;
+    border-color: transparent;
+    color: ${getColorDark};
   }
 `;
 

@@ -41,25 +41,54 @@ export const outlined = () => (
   <div>
     <p>Enabled:</p>
     <Toolbar>
-      <Button {...events} outlined="outlined">
+      <Button {...events} variant="outlined">
         Default
       </Button>
-      <Button color="primary" {...events} outlined="outlined">
+      <Button color="primary" {...events} variant="outlined">
         Primary
       </Button>
-      <Button color="error" {...events} outlined="outlined">
+      <Button color="error" {...events} variant="outlined">
         Error
       </Button>
     </Toolbar>
     <p>Desabled:</p>
     <Toolbar>
-      <Button disabled {...events} outlined="outlined">
+      <Button disabled {...events} variant="outlined">
         Default
       </Button>
-      <Button disabled color="primary" {...events} outlined="outlined">
+      <Button disabled color="primary" {...events} variant="outlined">
         Primary
       </Button>
-      <Button disabled color="error" {...events} outlined="outlined">
+      <Button disabled color="error" {...events} variant="outlined">
+        Error
+      </Button>
+    </Toolbar>
+  </div>
+);
+
+export const link = () => (
+  <div>
+    <p>Enabled:</p>
+    <Toolbar>
+      <Button {...events} variant="link">
+        Default
+      </Button>
+      <Button color="primary" {...events} variant="link">
+        Primary
+      </Button>
+      <Button color="error" {...events} variant="link">
+        Error
+      </Button>
+    </Toolbar>
+    <p>Desabled:</p>
+    <Toolbar>
+      <Button disabled {...events} variant="link">
+        Default
+      </Button>
+      <Button disabled color="primary" {...events} variant="link">
+        Primary
+      </Button>
+      <Button disabled color="error" {...events} variant="link">
         Error
       </Button>
     </Toolbar>
