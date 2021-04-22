@@ -30,7 +30,7 @@
     "test:watch": "yarn test -- --watch",
     "test:staged": "npm test --findRelatedTests",
     "test:ci": "yarn test --coverage",
-    "test:coverage": "yarn test && && coveralls < coverage/lcov.info",
+    "test:coverage": "yarn test -- --coverage --watchAll=false",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
