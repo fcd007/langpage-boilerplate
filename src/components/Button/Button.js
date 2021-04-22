@@ -4,7 +4,6 @@ import {
   ButtonRoot,
   ButtonOutlined,
   ButtonLink,
-  ButtonColors,
   ButtonsVariants,
 } from "./styles";
 
@@ -31,18 +30,18 @@ const ButtonWrapper = (props) => {
   }
 };
 
-Button.defaultProps = {
+ButtonWrapper.defaultProps = {
   type: "button",
   children: undefined,
   color: "default",
   variant: "default",
 };
 
-Button.propTypes = {
+ButtonWrapper.propTypes = {
   type: propTypes.string,
   children: propTypes.node,
-  color: propTypes.oneOf(Object.values(ButtonColors)),
-  variant: propTypes.oneOf(Object.values(ButtonsVariants)),
+  color: propTypes.oneOf("default" | "primary" | "error"),
+  variant: propTypes.oneOf("default" | "outlined" | "link"),
 };
 
 export default ButtonWrapper;
