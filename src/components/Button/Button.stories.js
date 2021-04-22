@@ -14,7 +14,9 @@ export const usage = () => (
   <div>
     <p>Enabled:</p>
     <Toolbar>
-      <Button {...events}>Default</Button>
+      <Button {...events} color="default">
+        Default
+      </Button>
       <Button color="primary" {...events}>
         Primary
       </Button>
@@ -24,7 +26,7 @@ export const usage = () => (
     </Toolbar>
     <p>Desabled:</p>
     <Toolbar>
-      <Button disabled {...events}>
+      <Button disabled {...events} color="default">
         Default
       </Button>
       <Button disabled color="primary" {...events}>
