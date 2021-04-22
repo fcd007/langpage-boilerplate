@@ -1,10 +1,16 @@
 import styled from "styled-components";
 import { theme } from "styles/ThemeProvider";
 
-const ButtonColors = {
+export const ButtonColors = {
   default: "default",
   primary: "primary",
   error: "error",
+};
+
+export const ButtonsVariants = {
+  default: "default",
+  outlined: "outlined",
+  link: "link",
 };
 
 const getColorButton = ({ color }) => {
