@@ -1,11 +1,11 @@
 import styled, { css } from "styled-components";
 import { BreadkpointsSize, breakAt } from "styles/Breadkpoints";
-import { theme } from "styles/ThemeProvider";
+import { allTheme } from "styles/ThemeProvider";
 
-const { colors } = theme;
+const { light } = allTheme;
 
 export const Root = styled.div`
-  color: ${colors.text.light};
+  color: ${light.colors.text.light};
   padding: 100px 0;
 
   ${(props) => css`
@@ -46,7 +46,7 @@ export const Content = styled.div`
   li {
     &::before {
       content: "\\2713\\0020";
-      color: ${colors.primary.light};
+      color: ${light.colors.primary.light};
     }
   }
 `;
