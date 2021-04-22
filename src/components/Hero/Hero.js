@@ -13,7 +13,6 @@ const Hero = ({ image, children }) => (
 
 Hero.propTypes = {
   image: PropTypes.string,
-
   children: PropTypes.node,
 };
 

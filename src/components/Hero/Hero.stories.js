@@ -3,6 +3,7 @@ import { text } from "@storybook/addon-knobs";
 
 //adicionando os estilos para poder gerenciar os styles
 import Hero from "./Hero";
+import Button from "components/Button/Button";
 import headerCovidImage from "stories/assets/images/covid-isolation.jpg";
 import headerWomanImage from "stories/assets/images/mask-woman.jpg";
 import Heading from "../Heading/Heading";
@@ -37,5 +38,8 @@ export const ListContent = () => (
       <li>Monitoramento em tempo real distanciamento e fluxo de pessoas;</li>
       <li>Sistema de gestão ativos e controle de recursos;</li>
     </ul>
+    <Button color="primary" variant="outlined">
+      Saber mais...
+    </Button>
   </Hero>
 );
