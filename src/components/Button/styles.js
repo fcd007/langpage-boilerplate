@@ -1,5 +1,7 @@
 import styled from "styled-components";
-import { theme } from "styles/ThemeProvider";
+import { allTheme } from "styles/ThemeProvider";
+
+const { light } = allTheme;
 
 export const ButtonColors = {
   default: "default",
@@ -13,7 +15,7 @@ export const ButtonsVariants = {
   link: "link",
 };
 
-const getColorButton = ({ color }) => {
+const getColorButton = ({ theme, color }) => {
   switch (color) {
     case ButtonColors.primary:
       return theme.colors.primary.main;
@@ -24,7 +26,18 @@ const getColorButton = ({ color }) => {
   }
 };
 
-const getColorDark = ({ color }) => {
+const getColorText = ({ theme, color }) => {
+  switch (color) {
+    case ButtonColors.primary:
+      return theme.colors.primary.main;
+    case ButtonColors.error:
+      return theme.colors.error.dark;
+    default:
+      return theme.colors.text.primary;
+  }
+};
+
+const getColorDark = ({ theme, color }) => {
   switch (color) {
     case ButtonColors.primary:
       return theme.colors.primary.dark;
@@ -44,7 +57,7 @@ export const ButtonRoot = styled.button`
   background-color: ${getColorButton};
   border: 2px solid ${getColorButton};
   border-radius: 4px;
-  color: ${theme.colors.text.light};
+  color: ${light.colors.text.light};
 
   &:disabled {
     opacity: 0.6;
