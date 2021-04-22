@@ -24,7 +24,7 @@ exports[`Match snapshot 1`] = `
   position: absolute;
   left: 0;
   bottom: -3px;
-  background-color: #ffc107;
+  background-color: #56CCF2;
   height: 5px;
   width: 70px;
 }
