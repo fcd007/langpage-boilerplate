@@ -40,8 +40,8 @@ ButtonWrapper.defaultProps = {
 ButtonWrapper.propTypes = {
   type: propTypes.string,
   children: propTypes.node,
-  color: propTypes.oneOf("default" | "primary" | "error"),
-  variant: propTypes.oneOf("default" | "outlined" | "link"),
+  color: propTypes.oneOf(["default", "primary", "error"]),
+  variant: propTypes.oneOf(["default", "outlined", "link"]),
 };
 
 export default ButtonWrapper;
