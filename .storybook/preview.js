@@ -7,8 +7,8 @@ import ThemeProvider, { ThemeNames } from "../src/styles/ThemeProvider";
 
 addDecorator((storyFn) => (
   <>
-    <GlobalStyle />
     <ThemeProvider themes={select("Theme", ThemeNames, ThemeNames.light)}>
+      <GlobalStyle />
       {storyFn()}
     </ThemeProvider>
   </>
