@@ -1,18 +1,12 @@
 import React from "react";
 import propTypes from "prop-types";
-import { ButtonRoot, ButtonOutlined, ButtonLink } from "./styles";
-
-const ButtonColors = {
-  default: "default",
-  primary: "primary",
-  error: "error",
-};
-
-const ButtonsVariants = {
-  default: "default",
-  outlined: "outlined",
-  link: "link",
-};
+import {
+  ButtonRoot,
+  ButtonOutlined,
+  ButtonLink,
+  ButtonColors,
+  ButtonsVariants,
+} from "./styles";
 
 const Button = ({ type, children, color, disabled, onClick, variant }) => (
   <ButtonRoot
