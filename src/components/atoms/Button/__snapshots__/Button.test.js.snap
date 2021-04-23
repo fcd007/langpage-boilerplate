@@ -137,6 +137,7 @@ exports[`Renders with link and variants %s 1`] = `
 <button
     class="c0 c1"
     color="primary"
+    type="button"
   />
 </DocumentFragment>
 `;
@@ -179,6 +180,7 @@ exports[`Renders with primary and variants %s 1`] = `
 <button
     class="c0 c1"
     color="primary"
+    type="button"
   />
 </DocumentFragment>
 `;
@@ -255,6 +257,8 @@ exports[`Renders with variants link 1`] = `
 
 <button
     class="c0 c1"
+    color="default"
+    type="button"
   />
 </DocumentFragment>
 `;
@@ -296,6 +300,8 @@ exports[`Renders with variants outlined 1`] = `
 
 <button
     class="c0 c1"
+    color="default"
+    type="button"
   />
 </DocumentFragment>
 `;
