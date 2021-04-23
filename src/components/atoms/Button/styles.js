@@ -1,8 +1,6 @@
 import styled from "styled-components";
 import { allTheme } from "styles/ThemeProvider";
 
-const { light } = allTheme;
-
 export const ButtonColors = {
   default: "default",
   primary: "primary",
@@ -31,9 +29,9 @@ const getColorText = ({ theme, color }) => {
     case ButtonColors.primary:
       return theme.colors.primary.main;
     case ButtonColors.error:
-      return theme.colors.error.dark;
+      return theme.colors.error.main;
     default:
-      return theme.colors.text.primary;
+      return theme.colors.text.light;
   }
 };
 
@@ -57,7 +55,7 @@ export const ButtonRoot = styled.button`
   background-color: ${getColorButton};
   border: 2px solid ${getColorButton};
   border-radius: 4px;
-  color: ${light.colors.text.light};
+  color: ${allTheme.light.colors.text.light};
 
   &:disabled {
     opacity: 0.6;

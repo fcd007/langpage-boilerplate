@@ -4,7 +4,7 @@ import Button from "./Button";
 import { Toolbar } from "./styles";
 
 export default {
-  title: "Components/Button",
+  title: "Components/Atoms/Button",
   component: Button,
 };
 
