@@ -1,6 +1,6 @@
 import React from "react";
 import { FaLaptop, FaKey, FaParking, FaUser } from "react-icons/fa";
-import { GridRoot, Box } from "components/atoms/Grid/style";
+import { GridRoot } from "components/atoms/Grid/style";
 import Feature from "./Feature";
 
 export default {
