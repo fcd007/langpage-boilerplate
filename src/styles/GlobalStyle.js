@@ -5,15 +5,13 @@ import { Helmet } from "react-helmet";
 import { BreadkpointsSize, breakAt } from "./Breadkpoints";
 import { allTheme } from "./ThemeProvider";
 
-const { light, dark } = allTheme;
-
 const GlobalStyle = createGlobalStyle`
   
   html {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-size: 100%;
-    color: ${light.colors.text.main};
+    color: ${allTheme.light.colors.text.main};
     box-sizing: border-box;
   }
 
@@ -31,7 +29,7 @@ const GlobalStyle = createGlobalStyle`
     letter-spacing: 2px;
 
     strong {
-    color: ${light.colors.primary.light};
+    color: ${allTheme.light.colors.primary.light};
   }
   }
 
