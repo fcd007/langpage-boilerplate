@@ -1,5 +1,5 @@
 import React from "react";
-
+import { FaLaptop } from "react-icons/fa";
 import Feature from "./Feature";
 
 export default {
@@ -7,4 +7,8 @@ export default {
   component: "Feature",
 };
 
-export const usage = () => <Feature title="Teste">Mais testes</Feature>;
+export const usage = () => (
+  <Feature icon={<FaLaptop />} title="Teste">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+  </Feature>
+);

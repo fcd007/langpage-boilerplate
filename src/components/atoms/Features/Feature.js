@@ -1,12 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Root, IconContainer, IconRoot } from "./styles";
 
 const Feature = ({ icon, title, children }) => (
-  <>
-    <div>{icon}</div>
+  <Root>
+    <IconRoot>
+      <IconContainer>{icon}</IconContainer>
+    </IconRoot>
     <h5>{title}</h5>
     <div>{children}</div>
-  </>
+  </Root>
 );
 
 Feature.defaultProps = {
