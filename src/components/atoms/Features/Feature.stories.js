@@ -1,5 +1,6 @@
 import React from "react";
 import { FaLaptop, FaKey, FaParking, FaUser } from "react-icons/fa";
+import { GridRoot, Box } from "components/atoms/Grid/style";
 import Feature from "./Feature";
 
 export default {
@@ -14,7 +15,7 @@ export const usage = () => (
 );
 
 export const withGrid = () => (
-  <div>
+  <GridRoot sm={2} md={4}>
     <Feature icon={<FaUser />} title="Controle espaços">
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
     </Feature>
@@ -27,5 +28,5 @@ export const withGrid = () => (
     <Feature icon={<FaKey />} title="Acessibilidade">
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
     </Feature>
-  </div>
+  </GridRoot>
 );
