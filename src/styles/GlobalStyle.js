@@ -65,6 +65,7 @@ const GlobalStyle = createGlobalStyle`
   h5 {
     font-size: 1.2rem;
     font-weight: 300;
+    
     ${breakAt(BreadkpointsSize.lg)}{
       font-size: 1.5rem;
     }

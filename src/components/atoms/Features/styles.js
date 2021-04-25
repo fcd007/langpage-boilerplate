@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { breakAt, BreadkpointsSize } from "styles/Breadkpoints";
+
 const getPrimaryDark = ({ theme }) => theme.colors.primary.dark;
 const getPrimaryLight = ({ theme }) => theme.colors.primary.light;
 const getPrimaryText = ({ theme }) => theme.colors.text.light;
@@ -9,6 +11,11 @@ export const Root = styled.div`
 
   & h5 {
     margin: 16px 0;
+    min-height: 3.12rem;
+
+    ${breakAt(BreadkpointsSize.lg)} {
+      min-height: 3.9rem;
+    }
   }
 
   & p {
