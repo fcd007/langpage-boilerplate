@@ -46,6 +46,24 @@ const Home = () => (
         </Feature>
       </GridRoot>
     </Section>
+
+    <Section inverse>
+      <Heading>
+        <h2>Conheça nossos serviços</h2>
+      </Heading>
+    </Section>
+
+    <Section inverse={false}>
+      <Heading>
+        <h2>Projeto Smarteye</h2>
+      </Heading>
+    </Section>
+
+    <Section inverse>
+      <Heading>
+        <h2>Dívidas Frequentes</h2>
+      </Heading>
+    </Section>
   </>
 );
 
