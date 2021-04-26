@@ -1,7 +1,15 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { breakAt, BreadkpointsSize } from "styles/Breadkpoints";
 
 const getPrimaryDark = ({ theme }) => theme.colors.primary.dark;
+
+const breakColumnAt = (size) => (props) =>
+  props[size] &&
+  css`
+    ${breakAt(BreadkpointsSize[size])} {
+      grid-template-columns: repeat(${(props) => props[size]}, 1fr);
+    }
+  `;
 
 export const GridRoot = styled.div`
   display: grid;
@@ -9,21 +17,13 @@ export const GridRoot = styled.div`
   grid-row-gap: 16px;
   grid-template-columns: 1fr;
 
-  ${breakAt(BreadkpointsSize.sm)} {
-    grid-template-columns: repeat(${(props) => props.sm}, 1fr);
-  }
+  ${breakColumnAt("sm")}
 
-  ${breakAt(BreadkpointsSize.md)} {
-    grid-template-columns: repeat(${(props) => props.md}, 1fr);
-  }
+  ${breakColumnAt("md")}
+  
+  ${breakColumnAt("lg")}
 
-  ${breakAt(BreadkpointsSize.lg)} {
-    grid-template-columns: repeat(${(props) => props.lg}, 1fr);
-  }
-
-  ${breakAt(BreadkpointsSize.xl)} {
-    grid-template-columns: repeat(${(props) => props.lg}, 1fr);
-  }
+  ${breakColumnAt("xl")}
 `;
 
 export const Box = styled.div`
