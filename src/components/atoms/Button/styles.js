@@ -24,17 +24,6 @@ const getColorButton = ({ theme, color }) => {
   }
 };
 
-const getColorText = ({ theme, color }) => {
-  switch (color) {
-    case ButtonColors.primary:
-      return theme.colors.primary.main;
-    case ButtonColors.error:
-      return theme.colors.error.main;
-    default:
-      return theme.colors.text.light;
-  }
-};
-
 const getColorDark = ({ theme, color }) => {
   switch (color) {
     case ButtonColors.primary:
