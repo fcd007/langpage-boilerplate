@@ -2,11 +2,12 @@ import React from "react";
 import { text } from "@storybook/addon-knobs";
 
 //adicionando os estilos para poder gerenciar os styles
-import Hero from "./Hero";
+import Hero from "components/molecules/Hero/Hero";
 import Button from "components/atoms/Button/Button";
+import Heading from "components/atoms/Heading/Heading";
+
 import headerCovidImage from "stories/assets/images/covid-isolation.jpg";
 import headerWomanImage from "stories/assets/images/mask-woman.jpg";
-import Heading from "components/atoms/Heading/Heading";
 
 export default {
   title: "Components/Molecules/Hero",
