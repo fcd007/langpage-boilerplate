@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { GridRoot, Box } from "./style";
 
 const Grid = () => (
-  <GridRoot sm={2} dm={3} lg={4} xl={5}>
+  <GridRoot sm={2} md={3} lg={4} xl={5}>
     <Box></Box>
     <Box></Box>
     <Box></Box>
