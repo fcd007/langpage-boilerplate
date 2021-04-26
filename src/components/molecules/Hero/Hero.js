@@ -1,13 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { Root, Content, Container } from "./Style";
+import ContainerRoot from "components/atoms/ContainerRoot/ContainerRoot";
+import { Root, Content } from "./Style";
 
 const Hero = ({ image, children }) => (
   <Root image={image} data-testid="hero">
-    <Container>
+    <ContainerRoot>
       <Content>{children}</Content>
-    </Container>
+    </ContainerRoot>
   </Root>
 );
 
