@@ -1,5 +1,11 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+import { allTheme as theme } from "styles/ThemeProvider";
 
 export const Content = styled.div`
-  margin: 40px 0;
+  padding: 40px 0;
+  ${(props) =>
+    props.inverse &&
+    css`
+      background-color: ${theme.light.colors.background.default};
+    `}
 `;
