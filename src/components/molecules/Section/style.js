@@ -8,4 +8,8 @@ export const Content = styled.div`
     css`
       background-color: ${theme.light.colors.background.default};
     `}
+
+  h2 {
+    margin-top: 0;
+  }
 `;

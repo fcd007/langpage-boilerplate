@@ -10,6 +10,7 @@ import Hero from "components/molecules/Hero/Hero";
 import Section from "components/molecules/Section/Section";
 
 import headerCovidImage from "assets/images/hero_banner02.jpg";
+import videoAbout from "assets/videos/smarteye_01.mp4";
 
 const Home = () => (
   <>
@@ -48,9 +49,25 @@ const Home = () => (
     </Section>
 
     <Section inverse>
-      <Heading>
-        <h2>Conheça nossos serviços</h2>
-      </Heading>
+      <GridRoot md={2}>
+        <div>
+          <Heading>
+            <h2>Conheça nossos serviços</h2>
+          </Heading>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci,
+            molestias qui! Magni voluptas assumenda reprehenderit animi vitae
+            quia! Quidem, veritatis saepe eveniet temporibus animi architecto
+            odit laborum doloribus ullam cupiditate?
+          </p>
+          <div>
+            <Button color="primary">SAIBA MAIS</Button>
+          </div>
+        </div>
+        <div>
+          <video src={videoAbout} width="100%" type="video/mp4" autoPlay loop />
+        </div>
+      </GridRoot>
     </Section>
 
     <Section inverse={false}>
