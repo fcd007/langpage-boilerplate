@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 import { breakAt, BreadkpointsSize } from "styles/Breadkpoints";
 
-const getPrimaryDark = ({ theme }) => theme.colors.primary.dark;
+const getPrimaryLight = ({ theme }) => theme.colors.primary.light;
 
 const breakColumnAt = (size) => (props) =>
   props[size] &&
@@ -28,5 +28,5 @@ export const GridRoot = styled.div`
 
 export const Box = styled.div`
   height: 200px;
-  background-color: ${getPrimaryDark};
+  background-color: ${getPrimaryLight};
 `;
