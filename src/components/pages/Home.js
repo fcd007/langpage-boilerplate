@@ -11,6 +11,7 @@ import Section from "components/molecules/Section/Section";
 
 import headerCovidImage from "assets/images/hero_banner02.jpg";
 import videoAbout from "assets/videos/smarteye_01.mp4";
+import Footer from "components/organisms/Footer/Footer";
 
 const Home = () => (
   <>
@@ -81,6 +82,7 @@ const Home = () => (
         <h2>Dívidas Frequentes</h2>
       </Heading>
     </Section>
+    <Footer />
   </>
 );
 
