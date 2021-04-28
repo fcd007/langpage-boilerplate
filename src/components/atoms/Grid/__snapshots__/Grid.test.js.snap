@@ -11,7 +11,7 @@ exports[`Match snapshot with no params 1`] = `
 
 .c1 {
   height: 200px;
-  background-color: #225CAA;
+  background-color: #56CCF2;
 }
 
 @media (min-width:576px) {
@@ -71,7 +71,7 @@ exports[`Match snapshot with params 1`] = `
 
 .c1 {
   height: 200px;
-  background-color: #225CAA;
+  background-color: #56CCF2;
 }
 
 @media (min-width:576px) {
@@ -131,7 +131,7 @@ exports[`Match snapshot with params lg 1`] = `
 
 .c1 {
   height: 200px;
-  background-color: #225CAA;
+  background-color: #56CCF2;
 }
 
 @media (min-width:576px) {
@@ -191,7 +191,7 @@ exports[`Match snapshot with params md 1`] = `
 
 .c1 {
   height: 200px;
-  background-color: #225CAA;
+  background-color: #56CCF2;
 }
 
 @media (min-width:576px) {
@@ -251,7 +251,7 @@ exports[`Match snapshot with params sm 1`] = `
 
 .c1 {
   height: 200px;
-  background-color: #225CAA;
+  background-color: #56CCF2;
 }
 
 @media (min-width:576px) {
@@ -311,7 +311,7 @@ exports[`Match snapshot with params xl 1`] = `
 
 .c1 {
   height: 200px;
-  background-color: #225CAA;
+  background-color: #56CCF2;
 }
 
 @media (min-width:576px) {
