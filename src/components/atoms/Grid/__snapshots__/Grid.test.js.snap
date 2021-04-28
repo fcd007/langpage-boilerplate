@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Match snapshot with no params 1`] = `
+exports['Match snapshot with no params 1'] = `
 <DocumentFragment>
   .c0 {
   display: grid;
@@ -60,7 +60,7 @@ exports[`Match snapshot with no params 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Match snapshot with params 1`] = `
+exports['Match snapshot with params 1'] = `
 <DocumentFragment>
   .c0 {
   display: grid;
@@ -120,7 +120,7 @@ exports[`Match snapshot with params 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Match snapshot with params lg 1`] = `
+exports['Match snapshot with params lg 1'] = `
 <DocumentFragment>
   .c0 {
   display: grid;
@@ -180,7 +180,7 @@ exports[`Match snapshot with params lg 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Match snapshot with params md 1`] = `
+exports['Match snapshot with params md 1'] = `
 <DocumentFragment>
   .c0 {
   display: grid;
@@ -240,7 +240,7 @@ exports[`Match snapshot with params md 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Match snapshot with params sm 1`] = `
+exports['Match snapshot with params sm 1'] = `
 <DocumentFragment>
   .c0 {
   display: grid;
@@ -300,7 +300,7 @@ exports[`Match snapshot with params sm 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Match snapshot with params xl 1`] = `
+exports['Match snapshot with params xl 1'] = `
 <DocumentFragment>
   .c0 {
   display: grid;

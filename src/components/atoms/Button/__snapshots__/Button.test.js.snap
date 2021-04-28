@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Renders with color default 1`] = `
+exports['Renders with color default 1'] = `
 <DocumentFragment>
   .c0 {
   font-size: 1rem;
@@ -32,7 +32,7 @@ exports[`Renders with color default 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Renders with color error 1`] = `
+exports['Renders with color error 1'] = `
 <DocumentFragment>
   .c0 {
   font-size: 1rem;
@@ -64,7 +64,7 @@ exports[`Renders with color error 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Renders with color primary 1`] = `
+exports['Renders with color primary 1'] = `
 <DocumentFragment>
   .c0 {
   font-size: 1rem;
@@ -96,7 +96,7 @@ exports[`Renders with color primary 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Renders with link and variants %s 1`] = `
+exports['Renders with link and variants %s 1'] = `
 <DocumentFragment>
   .c0 {
   font-size: 1rem;
@@ -142,7 +142,7 @@ exports[`Renders with link and variants %s 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Renders with primary and variants %s 1`] = `
+exports['Renders with primary and variants %s 1'] = `
 <DocumentFragment>
   .c0 {
   font-size: 1rem;
@@ -185,7 +185,7 @@ exports[`Renders with primary and variants %s 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Renders with variants default 1`] = `
+exports['Renders with variants default 1'] = `
 <DocumentFragment>
   .c0 {
   font-size: 1rem;
@@ -217,7 +217,7 @@ exports[`Renders with variants default 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Renders with variants link 1`] = `
+exports['Renders with variants link 1'] = `
 <DocumentFragment>
   .c0 {
   font-size: 1rem;
@@ -263,7 +263,7 @@ exports[`Renders with variants link 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Renders with variants outlined 1`] = `
+exports['Renders with variants outlined 1'] = `
 <DocumentFragment>
   .c0 {
   font-size: 1rem;
