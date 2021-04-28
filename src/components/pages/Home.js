@@ -1,5 +1,4 @@
 import React from "react";
-// import PropTypes from "prop-types";
 import { FaLaptop, FaKey, FaParking, FaUser } from "react-icons/fa";
 
 import Button from "components/atoms/Button/Button";
@@ -7,11 +6,13 @@ import Heading from "components/atoms/Heading/Heading";
 import { GridRoot } from "components/atoms/Grid/style";
 import Feature from "components/atoms/Features/Feature";
 import Hero from "components/molecules/Hero/Hero";
+import Footer from "components/organisms/Footer/Footer";
 import Section from "components/molecules/Section/Section";
 
 import headerCovidImage from "assets/images/hero_banner02.jpg";
 import videoAbout from "assets/videos/smarteye_01.mp4";
-import Footer from "components/organisms/Footer/Footer";
+import videoProject from "assets/videos/smarteye_02.mp4";
+import videoFQ from "assets/videos/smarteye_03.mp4";
 
 const Home = () => (
   <>
@@ -53,7 +54,7 @@ const Home = () => (
       <GridRoot md={2}>
         <div>
           <Heading>
-            <h2>Conheça nossos serviços</h2>
+            <h2>Projeto SmartEye</h2>
           </Heading>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci,
@@ -71,22 +72,58 @@ const Home = () => (
       </GridRoot>
     </Section>
 
-    <Section inverse={false}>
-      <Heading>
-        <h2>Projeto Smarteye</h2>
-      </Heading>
+    <Section>
+      <GridRoot md={2}>
+        <div>
+          <Heading>
+            <h2>Nossos Serviços</h2>
+          </Heading>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci,
+            molestias qui! Magni voluptas assumenda reprehenderit animi vitae
+            quia! Quidem, veritatis saepe eveniet temporibus animi architecto
+            odit laborum doloribus ullam cupiditate?
+          </p>
+          <div>
+            <Button color="primary">SAIBA MAIS</Button>
+          </div>
+        </div>
+        <div>
+          <video
+            src={videoProject}
+            width="100%"
+            type="video/mp4"
+            autoPlay
+            loop
+          />
+        </div>
+      </GridRoot>
     </Section>
 
     <Section inverse>
-      <Heading>
-        <h2>Dívidas Frequentes</h2>
-      </Heading>
+      <GridRoot md={2}>
+        <div>
+          <Heading>
+            <h2>Dúvidas Frequentes</h2>
+          </Heading>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci,
+            molestias qui! Magni voluptas assumenda reprehenderit animi vitae
+            quia! Quidem, veritatis saepe eveniet temporibus animi architecto
+            odit laborum doloribus ullam cupiditate?
+          </p>
+          <div>
+            <Button color="primary">SAIBA MAIS</Button>
+          </div>
+        </div>
+        <div>
+          <video src={videoFQ} width="100%" type="video/mp4" autoPlay loop />
+        </div>
+      </GridRoot>
     </Section>
+
     <Footer />
   </>
 );
-
-// Home.defaultProps = {};
-// Home.propTypes = {};
 
 export default Home;
