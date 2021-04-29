@@ -20,6 +20,7 @@ const light = {
       light: "#F4F4F4",
     },
     background: {
+      main: "#FFFFFF",
       default: "#F2F2F2",
       paper: "#E0E0E0",
       dark: "#2A2A2A",
