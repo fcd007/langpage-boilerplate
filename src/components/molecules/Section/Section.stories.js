@@ -5,7 +5,7 @@ import Section from "./Section";
 
 export default {
   title: "Components/Molecules/Section",
-  component: "Section",
+  component: Section,
 };
 
 export const usage = () => (
