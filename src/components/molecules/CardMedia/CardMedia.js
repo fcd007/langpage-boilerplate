@@ -4,8 +4,12 @@ import { StyledMedia } from "./style";
 
 const CardMedia = ({ image }) => <StyledMedia image={image} />;
 
-CardMedia.defaultProps = {};
+CardMedia.defaultProps = {
+  children: undefined,
+};
 
-CardMedia.propTypes = {};
+CardMedia.propTypes = {
+  children: PropTypes.string,
+};
 
 export default CardMedia;
