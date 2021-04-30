@@ -13,6 +13,11 @@ const Hero = ({ image, children }) => (
 );
 
 Hero.propTypes = {
+  image: undefined,
+  children: undefined,
+};
+
+Hero.propTypes = {
   image: PropTypes.string,
   children: PropTypes.node,
 };
