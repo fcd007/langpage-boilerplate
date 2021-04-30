@@ -5,8 +5,11 @@ import { StyledBody } from "./style";
 
 const CardBody = ({ children }) => <StyledBody>{children}</StyledBody>;
 
-CardBody.defaultProps = {};
+CardBody.defaultProps = {
+  children: undefined,
+};
 
-CardBody.propTypes = {};
-
+CardBody.propTypes = {
+  children: PropTypes.node,
+};
 export default CardBody;
