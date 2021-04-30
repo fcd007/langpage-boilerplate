@@ -5,8 +5,12 @@ import { Root } from "./style";
 
 const Card = ({ children }) => <Root>{children}</Root>;
 
-Card.defaultProps = {};
+Card.defaultProps = {
+  children: undefined,
+};
 
-Card.propTypes = {};
+Card.propTypes = {
+  children: PropTypes.node,
+};
 
 export default Card;
