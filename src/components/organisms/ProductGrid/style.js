@@ -1,3 +1,6 @@
 import styled from "styled-components";
 
-export const Root = styled.div``;
+export const Toolbar = styled.div`
+  margin-top: 40px;
+  text-align: center;
+`;
