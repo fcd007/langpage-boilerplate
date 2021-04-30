@@ -1,31 +1,15 @@
-import styled from "styled-components";
+import React from "react";
+import PropTypes from "prop-types";
+import { Root } from "./style";
 
-const Heading = styled.div`
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    position: relative;
-    margin-bottom: 25px;
-    padding-bottom: 8px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+const Heading = ({ children }) => <Root>{children}</Root>;
 
-    &::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: -3px;
-      background-color: ${(props) => props.theme.colors.primary.light};
-      height: 5px;
-      width: 70px;
-    }
-  }
+Heading.defaultProps = {
+  children: undefined,
+};
 
-  h1 {
-    margin-bottom: 25px;
-  }
-`;
+Heading.propTypes = {
+  children: PropTypes.node,
+};
 
 export default Heading;
