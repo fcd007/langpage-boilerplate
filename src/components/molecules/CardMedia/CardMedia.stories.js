@@ -5,7 +5,7 @@ import placeImage from "assets/images/card01.jpg";
 
 export default {
   title: "Components/Molecules/CardMedia",
-  component: "CardMedia",
+  component: CardMedia,
 };
 
-export const usage = ({ image }) => <CardMedia image={placeImage} />;
+export const usage = () => <CardMedia image={placeImage} />;
