@@ -6,10 +6,10 @@ import ButtonWrapper from "components/atoms/Button/Button";
 
 export default {
   title: "Components/molecules/CardBody",
-  component: "CardBody",
+  component: CardBody,
 };
 
-export const usage = ({ children }) => (
+export const usage = () => (
   <CardBody>
     <Heading>
       <h6>Título</h6>
