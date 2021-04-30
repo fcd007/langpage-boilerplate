@@ -11,10 +11,10 @@ import Section from "components/molecules/Section/Section";
 
 export default {
   title: "Components/molecules/Card",
-  component: "Card",
+  component: Card,
 };
 
-export const usage = ({ children }) => (
+export const usage = () => (
   <Section inverse>
     <Card>
       <CardBody>
