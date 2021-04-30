@@ -5,7 +5,7 @@ import Feature from "./Feature";
 
 export default {
   title: "Components/Atoms/Feature",
-  component: "Feature",
+  component: Feature,
 };
 
 export const usage = () => (
