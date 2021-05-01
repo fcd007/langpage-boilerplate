@@ -2,7 +2,8 @@ import styled from "styled-components";
 import { allTheme as theme } from "styles/ThemeProvider";
 
 export const Root = styled.div`
-  width: 450px;
+  width: 350px;
   border-radius: 4px;
+  border-color: ${theme.light.colors.primary.light};
   background-color: ${theme.light.colors.background.main};
 `;
