@@ -8,11 +8,46 @@ import Feature from "components/atoms/Features/Feature";
 import Hero from "components/molecules/Hero/Hero";
 import Footer from "components/organisms/Footer/Footer";
 import Section from "components/molecules/Section/Section";
+import ProductGrid from "components/organisms/ProductGrid/ProductGrid";
 
 import headerCovidImage from "assets/images/hero_banner02.jpg";
+import productImage from "assets/images/card03.jpg";
 import videoAbout from "assets/videos/smarteye_01.mp4";
 import videoProject from "assets/videos/smarteye_02.mp4";
 import videoFQ from "assets/videos/smarteye_03.mp4";
+
+const products = [
+  {
+    id: 1,
+    title: "Title 1",
+    summary: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    image: productImage,
+  },
+  {
+    id: 2,
+    title: "Title 2",
+    summary: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    image: productImage,
+  },
+  {
+    id: 3,
+    title: "Title 3",
+    summary: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    image: productImage,
+  },
+  {
+    id: 4,
+    title: "Title 4",
+    summary: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    image: productImage,
+  },
+  {
+    id: 5,
+    title: "Title 5",
+    summary: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    image: productImage,
+  },
+];
 
 const Home = () => (
   <>
@@ -51,25 +86,10 @@ const Home = () => (
     </Section>
 
     <Section inverse>
-      <GridRoot md={2}>
-        <div>
-          <Heading>
-            <h2>Projeto SmartEye</h2>
-          </Heading>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci,
-            molestias qui! Magni voluptas assumenda reprehenderit animi vitae
-            quia! Quidem, veritatis saepe eveniet temporibus animi architecto
-            odit laborum doloribus ullam cupiditate?
-          </p>
-          <div>
-            <Button color="primary">SAIBA MAIS</Button>
-          </div>
-        </div>
-        <div>
-          <video src={videoAbout} width="100%" type="video/mp4" autoPlay loop />
-        </div>
-      </GridRoot>
+      <Heading>
+        <h2>Nossos Serviços</h2>
+        <ProductGrid products={products} />
+      </Heading>
     </Section>
 
     <Section>
