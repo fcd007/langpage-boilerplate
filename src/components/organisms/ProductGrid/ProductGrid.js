@@ -38,6 +38,7 @@ const ProductGrid = ({ products }) => {
         <Toolbar>
           <Button
             variant="outlined"
+            color="primary"
             onClick={() => {
               setShowAll(true);
             }}
