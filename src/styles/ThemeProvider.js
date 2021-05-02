@@ -24,6 +24,7 @@ const light = {
       default: "#F2F2F2",
       paper: "#E0E0E0",
       dark: "#2A2A2A",
+      darkBlue: "#003557",
     },
     error: {
       main: "#EB5757",
