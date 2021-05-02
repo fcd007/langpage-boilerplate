@@ -2,8 +2,8 @@ import styled from "styled-components";
 import { allTheme as theme } from "styles/ThemeProvider";
 
 export const Root = styled.footer`
-  background-color: ${theme.light.colors.background.dark};
-  color: ${theme.light.colors.background.dark};
+  background-color: ${theme.light.colors.background.darkBlue};
+  color: ${theme.light.colors.background.paper};
   padding: 40px 0;
 
   h6 {
