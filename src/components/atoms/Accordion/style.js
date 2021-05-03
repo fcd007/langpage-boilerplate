@@ -1,10 +1,24 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { allTheme as theme } from "styles/ThemeProvider";
 
 export const Root = styled.div`
   background-color: ${theme.light.colors.background.main};
   border: 1px solid ${theme.light.colors.background.paper};
   border-left: 5px solid ${(props) => props.theme.colors.primary.main};
+
+  ${(props) =>
+    props.open &&
+    css`
+      margin: 0 0 16px 0;
+    `}
+
+  &:first-child {
+    margin-top: 0px;
+  }
+
+  &::last-child {
+    margin-bottom: 0px;
+  }
 `;
 
 export const Head = styled.div`
