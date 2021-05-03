@@ -4,20 +4,29 @@ import { MdExpandMore, MdExpandLess } from "react-icons/md";
 import PropTypes from "prop-types";
 import { Root, Body, Head } from "./style";
 
-const Accordion = ({ title, children }) => {
-  const [open, setOpen] = useState(false);
+const Accordion = ({ title, children, onChange, open: pOpen }) => {
+  const [stateOpen, setStateOpen] = useState(false);
 
-  const handleAccordion = () => {
-    setOpen(!open);
+  const isControlled = pOpen !== undefined;
+  const openController = isControlled ? pOpen : stateOpen;
+
+  const handleClick = () => {
+    const newState = !openController;
+
+    if (isControlled) {
+      onChange(newState);
+    } else {
+      setStateOpen(newState);
+    }
   };
 
   return (
-    <Root>
-      <Head role="button" onClick={handleAccordion}>
+    <Root open={openController}>
+      <Head role="button" onClick={handleClick}>
         <h6>{title}</h6>
-        {open ? <MdExpandLess /> : <MdExpandMore />}
+        {stateOpen ? <MdExpandLess /> : <MdExpandMore />}
       </Head>
-      {open && <Body>{children}</Body>}
+      {stateOpen && <Body>{children}</Body>}
     </Root>
   );
 };
@@ -25,11 +34,15 @@ const Accordion = ({ title, children }) => {
 Accordion.defaultProps = {
   title: undefined,
   children: undefined,
+  open: undefined,
+  onChange: undefined,
 };
 
 Accordion.propTypes = {
   title: PropTypes.string,
   children: PropTypes.node,
+  open: PropTypes.bool,
+  onChange: PropTypes.func,
 };
 
 export default Accordion;
