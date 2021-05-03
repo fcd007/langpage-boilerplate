@@ -25,11 +25,9 @@ const ProductGrid = ({ products }) => {
                 <h6>{product.title}</h6>
               </Heading>
               <p>{product.summary}</p>
-              <Toolbar>
-                <Button variant="link" color="primary">
-                  SAIBA MAIS
-                </Button>
-              </Toolbar>
+              <Button variant="link" color="primary">
+                SAIBA MAIS
+              </Button>
             </CardBody>
           </Card>
         ))}
