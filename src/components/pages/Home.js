@@ -9,12 +9,12 @@ import Hero from "components/molecules/Hero/Hero";
 import Footer from "components/organisms/Footer/Footer";
 import Section from "components/molecules/Section/Section";
 import ProductGrid from "components/organisms/ProductGrid/ProductGrid";
+import Accordion from "components/atoms/Accordion/Accordion";
 
 import headerCovidImage from "assets/images/hero_banner02.jpg";
 import productImage from "assets/images/card03.jpg";
-import videoAbout from "assets/videos/smarteye_01.mp4";
 import videoProject from "assets/videos/smarteye_02.mp4";
-import videoFQ from "assets/videos/smarteye_03.mp4";
+import AccordionGroup from "components/atoms/AccordionGroup/AccordionGroup";
 
 const products = [
   {
@@ -96,7 +96,7 @@ const Home = () => (
       <GridRoot md={2}>
         <div>
           <Heading>
-            <h2>Nossos Serviços</h2>
+            <h2>Projeto SmartEye</h2>
           </Heading>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci,
@@ -121,27 +121,27 @@ const Home = () => (
     </Section>
 
     <Section inverse>
-      <GridRoot md={2}>
-        <div>
-          <Heading>
-            <h2>Dúvidas Frequentes</h2>
-          </Heading>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci,
-            molestias qui! Magni voluptas assumenda reprehenderit animi vitae
-            quia! Quidem, veritatis saepe eveniet temporibus animi architecto
-            odit laborum doloribus ullam cupiditate?
-          </p>
-          <div>
-            <Button color="primary">SAIBA MAIS</Button>
-          </div>
-        </div>
-        <div>
-          <video src={videoFQ} width="100%" type="video/mp4" autoPlay loop />
-        </div>
-      </GridRoot>
-    </Section>
+      <Heading>
+        <h2>Dúvidas Frequentes</h2>
+      </Heading>
 
+      <AccordionGroup>
+        <Accordion title="Como funciona o projeto SmartEye?">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
+          voluptatibus enim et quaerat minima blanditiis.
+        </Accordion>
+
+        <Accordion title="Como recuperar senha ou acesso bloqueado?">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
+          voluptatibus enim et quaerat minima blanditiis.
+        </Accordion>
+
+        <Accordion title="Como solicito acesso a plataforma SmartEye?">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
+          voluptatibus enim et quaerat minima blanditiis.
+        </Accordion>
+      </AccordionGroup>
+    </Section>
     <Footer />
   </>
 );
