@@ -4,15 +4,14 @@ import { MdExpandMore, MdExpandLess } from "react-icons/md";
 import PropTypes from "prop-types";
 import { Root, Body, Head } from "./style";
 
-const Accordion = ({ title, children, onChange, open: pOpen }) => {
-  const [stateOpen, setStateOpen] = useState(false);
+const Accordion = ({ title, open: pOpen, onChange, children }) => {
+  const [stateOpen, setStateOpen] = useState(true);
 
   const isControlled = pOpen !== undefined;
   const openController = isControlled ? pOpen : stateOpen;
 
   const handleClick = () => {
     const newState = !openController;
-
     if (isControlled) {
       onChange(newState);
     } else {

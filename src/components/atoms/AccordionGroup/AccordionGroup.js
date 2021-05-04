@@ -1,9 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { Root } from "./style";
-
-const AccordionGroup = ({ children }) => <Root>{children}</Root>;
+const AccordionGroup = ({ children }) => {
+  return React.Children.map(children, (child) =>
+    React.cloneElement(child, { open: true })
+  );
+};
 
 AccordionGroup.defaultProps = {
   children: undefined,

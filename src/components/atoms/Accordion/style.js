@@ -9,7 +9,7 @@ export const Root = styled.div`
   ${(props) =>
     props.open &&
     css`
-      margin: 0 0 16px 0;
+      margin: 16px 0;
     `}
 
   &:first-child {
