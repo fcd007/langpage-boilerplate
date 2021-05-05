@@ -8,7 +8,11 @@ const AccordionGroup = ({ children }) => {
     React.cloneElement(child, {
       open: childIndex === index,
       onChange: () => {
-        setIndex(childIndex);
+        if (childIndex === index) {
+          setIndex(-1);
+        } else {
+          setIndex(childIndex);
+        }
       },
     })
   );
