@@ -12,11 +12,11 @@ const Accordion = ({ title, open: pOpen, onChange, children }) => {
 
   const handleClick = () => {
     const newState = !openController;
-    if (isControlled) {
-      onChange(newState);
-    } else {
+    if (!isControlled) {
       setStateOpen(newState);
     }
+
+    onChange(newState);
   };
 
   return (
