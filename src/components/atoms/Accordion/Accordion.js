@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-
 import { MdExpandMore, MdExpandLess } from "react-icons/md";
 import PropTypes from "prop-types";
+
 import { Root, Body, Head } from "./style";
 
 const Accordion = ({ title, open: pOpen, onChange, children }) => {
-  const [stateOpen, setStateOpen] = useState(true);
+  const [stateOpen, setStateOpen] = useState(false);
 
   const isControlled = pOpen !== undefined;
   const openController = isControlled ? pOpen : stateOpen;
@@ -20,12 +20,12 @@ const Accordion = ({ title, open: pOpen, onChange, children }) => {
   };
 
   return (
-    <Root open={openController}>
+    <Root open={pOpen}>
       <Head role="button" onClick={handleClick}>
         <h6>{title}</h6>
-        {stateOpen ? <MdExpandLess /> : <MdExpandMore />}
+        {openController ? <MdExpandLess /> : <MdExpandMore />}
       </Head>
-      {stateOpen && <Body>{children}</Body>}
+      {openController && <Body>{children}</Body>}
     </Root>
   );
 };
