@@ -10,11 +10,11 @@ import Footer from "components/organisms/Footer/Footer";
 import Section from "components/molecules/Section/Section";
 import ProductGrid from "components/organisms/ProductGrid/ProductGrid";
 import Accordion from "components/atoms/Accordion/Accordion";
+import AccordionGroup from "components/atoms/Accordion/AccordionGroup";
 
 import headerCovidImage from "assets/images/hero_banner02.jpg";
 import productImage from "assets/images/card03.jpg";
 import videoProject from "assets/videos/smarteye_02.mp4";
-import AccordionGroup from "components/atoms/AccordionGroup/AccordionGroup";
 
 const products = [
   {
