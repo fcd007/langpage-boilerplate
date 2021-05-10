@@ -11,6 +11,7 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^13.1.8",
     "babel-loader": "8.2.2",
+    "chromatic": "^5.8.0",
     "dotenv": "^8.2.0",
     "jest-styled-components": "^7.0.4",
     "lint-staged": "^10.5.4",
@@ -37,7 +38,8 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
-    "check": "npm-check -u -s"
+    "check": "npm-check -u -s",
+    "chromatic": "chromatic --project-token 041a9ef14db4"
   },
   "lint-staged": {
     "**/*.+(js|jsx)": [
